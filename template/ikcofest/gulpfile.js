@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     replace = require('gulp-replace'),
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
+    browserSync = require('browser-sync').create(),
     pipeline = require('readable-stream').pipeline;
 
 // Gulp Sass Compiler
@@ -19,7 +20,8 @@ gulp.task('sass', function () {
     ])
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(['./dist/css/']));
+        .pipe(gulp.dest(['./dist/css/']))
+        .pipe(browserSync.stream());
 });
 
 //Gulp Script Concat
@@ -38,7 +40,8 @@ gulp.task('script', function () {
         .pipe(replace("\\t", ''))
         .pipe(replace("  ", ''))
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'));
+        .pipe(gulp.dest('./dist/js/'))
+        .pipe(browserSync.stream());
 });
 
 // Gulp Image Min
@@ -51,9 +54,16 @@ gulp.task('image', () =>
 );
 
 // Gulp Watch
-gulp.task('watch', function() {
+gulp.task('watch', function () {
+    browserSync.init({
+        proxy: "http://localhost/ikcofest.ir",
+        online: true,
+        injectChanges: true
+    });
+
     gulp.watch('src/js/*.js', gulp.series('script'));
     gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
+    gulp.watch('./**/*.php').on('change', browserSync.reload);
 });
 
 // global Task
