@@ -162,7 +162,7 @@ ul.home-menu {
 form#add_new {
 
   .group-input { padding:15px; padding-top:10px; }
-  .group-input label { font-weight:normal !important; width:30%; font-size: 12px; }
+  .group-input label { font-weight:normal !important; /*width:30%;*/ font-size: 12px; }
   .input-group { min-width:50%; }
   span[data-show] { color:#d9534f; }
 

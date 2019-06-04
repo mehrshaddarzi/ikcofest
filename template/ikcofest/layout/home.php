@@ -123,22 +123,22 @@
                         <div class="group-input">
 
                             <div class="form-group form-inline">
-                                <label> نام <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> نام <span class="text-danger">*</span></label>
                                 <input type="text" name="name" value="" placeholder="لطفا نام خود را وارد نمایید" class="form-control rtl input-group" autocomplete="off">
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> نام خانوادگی <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> نام خانوادگی <span class="text-danger">*</span></label>
                                 <input type="text" name="family" value="" placeholder="لطفا نام خانوادگی خود را وارد نمایید" class="form-control rtl input-group" autocomplete="off">
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> تاریخ تولد <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> تاریخ تولد <span class="text-danger">*</span></label>
                                 <input type="text" name="birthday" class="form-control ltr input-group" id="datapicker-persian" placeholder="xxxx/xx/xx" data-tooltip="hover-tooltip" autocomplete="off">
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> استان محل اقامت <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> استان محل اقامت <span class="text-danger">*</span></label>
                                 <select name="province" class="form-control rtl input-group" autocomplete="off" data-change="set_city_list">
 									<?php
 									global $wpdb;
@@ -171,7 +171,7 @@
 							?>
 
                             <div class="form-group form-inline">
-                                <label> شهر <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> شهر <span class="text-danger">*</span></label>
                                 <script>
                                     var Iran_City_List = '<?php echo json_encode( $Iran_city, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_NUMERIC_CHECK ); ?>';
                                 </script>
@@ -181,17 +181,17 @@
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> آدرس کامل <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> آدرس کامل <span class="text-danger">*</span></label>
                                 <textarea type="text" style="min-height: 100px;" name="address" class="form-control rtl input-group" autocomplete="off"></textarea>
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> شماره همراه <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> شماره همراه <span class="text-danger">*</span></label>
                                 <input maxlength="11" type="text" name="mobile" data-put="number" class="form-control ltr input-group" autocomplete="off" placeholder="09xxxxxxxxx">
                             </div>
 
                             <div class="form-group form-inline">
-                                <label> محل عکس <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> محل عکس <span class="text-danger">*</span></label>
                                 <input type="text" name="picture_place" value="" placeholder="محل عکس را وارد نمایید" class="form-control rtl input-group" autocomplete="off">
                             </div>
 
@@ -202,7 +202,7 @@
                         </div>
                         <div class="group-input">
                             <div class="form-group form-inline">
-                                <label> آی دی اینستاگرام <span class="text-danger">*</span></label>
+                                <label class="col-md-4"> آی دی اینستاگرام <span class="text-danger">*</span></label>
                                 <input type="text" name="instagram" value="" placeholder="@username" class="form-control ltr input-group" autocomplete="off">
                             </div>
                             <p class="desc-input text-justify" style="color: #929292;">
@@ -262,7 +262,7 @@
                                         <div id="collapse<?php echo $i; ?>" class="panel-collapse collapse<?php if ( $i == 1 ) { ?> in<?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $i; ?>">
                                             <div class="panel-body">
                                                 <div class="form-group form-inline">
-                                                    <label> فایل عکس
+                                                    <label class="col-md-4"> فایل عکس
 														<?php if ( $i == 1 ) { ?>
                                                             <span class="text-danger">*</span>
 														<?php } ?>
@@ -271,7 +271,7 @@
                                                 </div>
 
                                                 <div class="form-group form-inline">
-                                                    <label> آدرس عکس
+                                                    <label class="col-md-4"> آدرس عکس
 														<?php if ( $i == 1 ) { ?>
                                                             <span class="text-danger">*</span>
 														<?php } ?>
