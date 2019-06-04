@@ -1,0 +1,26 @@
+.widget-icon { vertical-align:-2px; }
+
+.breadcrumb {
+  /*margin-top:35px;*/
+  margin-bottom:10px;
+  li { font-size:12px; i { font-size:14px; vertical-align:0px; } a { color:$link-color; &:hover { color:lighten($link-color, 20%); } } }
+}
+
+
+/*Wordpress Matn*/
+.matn { text-align:right; font-size: 12px; line-height: 29px; padding:8px; line-height:26px; color:$text-color; @extend .rtl; }
+.main-matn { font-size: 13px; line-height: 31px; text-shadow: -1px -1px 1px rgba(78, 99, 44, 0.1); color: #363535 !important; }
+.matn p { margin: 0px; padding: 8px; }
+.matn h2 { margin: 3px; margin-top:10px; font-family:$yekan; font-size:17px; font-weight:bold; color:$base-blue; }
+.matn h3 { font-weight:bold; }
+.matn a { color:$link-color; text-decoration: none; }
+.matn a:hover { color:lighten($link-color, 20%) !important; }
+.matn img { margin:4px; @extend .effect; }
+.matn img:hover { opacity:0.5; }
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin:5px auto !important; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.img-thumbnail { border:0px !important; }

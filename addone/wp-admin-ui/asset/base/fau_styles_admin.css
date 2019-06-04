@@ -1,0 +1,534 @@
+/* Load Font */
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/IRANSans-Bold.eot?#") format("eot"), url("../fonts/IRANSans-Bold.woff2") format("woff2"), url("../fonts/IRANSans-Bold.woff") format("woff");
+  font-weight: bold
+}
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/IRANSans-Black.eot?#") format("eot"), url("../fonts/IRANSans-Black.woff2") format("woff2"), url("../fonts/IRANSans-Black.woff") format("woff");
+  font-weight: 900
+}
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/IRANSans-UltraLight.eot?#") format("eot"), url("../fonts/IRANSans-UltraLight.woff2") format("woff2"), url("../fonts/IRANSans-UltraLight.woff") format("woff");
+  font-weight: 200
+}
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/IRANSans-Light-Expanded.eot?#") format("eot"), url("../fonts/IRANSans-Light-Expanded.woff2") format("woff2"), url("../fonts/IRANSans-Light-Expanded.woff") format("woff");
+  font-weight: 300
+}
+@font-face {
+  font-family: 'IRANSans-web';
+  src: url("../fonts/IRANSANSExpanded.eot?#") format("eot"), url("../fonts/IRANSANSExpanded.woff2") format("woff2"), url("../fonts/IRANSANSExpanded.woff") format("woff");
+  font-weight: normal
+}
+/* font change */
+body.rtl, h1, h2, h3, h4, h5, h6, #wpadminbar a {
+  font-family: 'IRANSans-web', tahoma, sans-serif !important;
+}
+.rtl #wpadminbar {
+  font-family: 'IRANSans-web', tahoma, sans-serif;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px !important;
+    outline: 0px !important;
+}
+
+input, select, textarea {
+    font-size: 12px;
+}
+
+/*.rtl #wpadminbar * {
+  font-family: 'IRANSans-web', tahoma, sans-serif;
+}*/
+#wpadminbar, #wpadminbar * {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 32px;
+}
+h2 span {
+  font-weight: 300;
+  font-size: 12.5px;
+}
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#adminmenu .wp-submenu a {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 6px 0;
+}
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+  font-size: 12px;
+  height: 30px;
+}
+
+
+html {
+background:#FFF
+}
+
+body,
+#wpwrap {
+  background: #f1f1f1
+}
+
+#adminmenu {
+margin:0
+}
+
+/* p */
+p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+/*Gray Effect */
+.grey {
+    -webkit-filter: grayscale(1);
+}
+
+/* Fixes issue caused by WP V4.2.2 */
+#adminmenu div.wp-menu-image:before {
+  color: #a0a5aa;
+  color: rgb(160,165,170);
+}
+
+#adminmenu,#adminmenu .wp-submenu,#adminmenuback,#adminmenuwrap,/* Sub Menu */
+#adminmenu .wp-has-current-submenu .wp-submenu,#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,#adminmenu .wp-has-current-submenu.opensub .wp-submenu,#adminmenu a.wp-has-current-submenu:focus+.wp-submenu,.no-js li.wp-has-current-submenu:hover .wp-submenu {
+background:#f5f5f5;
+border-right: 1px solid #e4e4e4;
+}
+
+.wp-core-ui .button-primary {
+   text-shadow: none !important;
+}
+
+#adminmenu .awaiting-mod, #adminmenu .update-plugins {
+  background-color: #3498db;
+}
+
+#adminmenu .awaiting-mod, #adminmenu .update-plugins {
+  margin-top: -1px;
+}
+
+#collapse-menu,
+#collapse-button div:after {
+color:#666;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,#adminmenu .wp-menu-arrow,#adminmenu .wp-menu-arrow div,#adminmenu li.current a.menu-top,#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,.folded #adminmenu li.current.menu-top,.folded #adminmenu li.wp-has-current-submenu,/* Hover actions */
+#adminmenu li.menu-top:hover,#adminmenu li.opensub>a.menu-top,#adminmenu li>a.menu-top:focus {
+background:#FFF
+}
+
+#adminmenu li.wp-menu-separator {
+display: none
+}
+
+#adminmenu .wp-submenu-head,#adminmenu a.menu-top {
+padding:7px 0
+}
+
+.folded #adminmenu .wp-submenu-head,.folded #adminmenu a.menu-top {
+padding:5px 0
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu,.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+padding:10px
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu div.wp-menu-name {
+color:#FFF;
+}
+
+ul#adminmenu a.wp-has-current-submenu:after,ul#adminmenu>li.current>a.current:after,#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+display:none
+}
+
+#adminmenu li.menu-top {
+border-bottom:1px solid #e4e4e4
+}
+
+#adminmenu div.wp-menu-name {
+color:#666
+}
+
+.wrap h2 {
+font-size:24px;
+font-weight:bold;
+padding:30px 25px 24px 0
+}
+
+.wrap .add-new-h2,.wrap .add-new-h2:active {
+color:#FFF;
+top:-8px
+}
+
+.update-core-php h2 {
+  margin-top: 1em;
+}
+
+#titlediv #title-prompt-text {
+font-size:1.2em;
+font-weight:100
+}
+
+div.updated {
+border-top:1px solid #e1e1e1;
+border-bottom:1px solid #e1e1e1;
+border-left:1px solid #e1e1e1;
+-webkit-box-shadow:none;
+box-shadow:none
+}
+
+input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea {
+box-shadow:none
+}
+
+.postbox {
+border:1px solid #e1e1e1
+}
+
+.menu.ui-sortable .menu-item-handle,.meta-box-sortables.ui-sortable .hndle {
+background:#f5f5f5
+}
+
+#major-publishing-actions {
+background:#FFF;
+padding:0
+}
+
+#delete-action {
+float:none;
+padding:15px 0;
+text-align:center
+}
+
+#delete-action a {
+text-decoration:underline
+}
+
+#publishing-action {
+float:none;
+display:block;
+width:100%
+}
+
+#publishing-action .spinner {
+width:100%;
+background-position:top center;
+display: none;
+float: none;
+padding:5px 0;
+margin: 0;
+}
+
+#publishing-action .spinner.is-active {
+  display: block;
+}
+
+#publishing-action #publish {
+float:none;
+font-size:16px;
+height:auto;
+padding:10px;
+width:100%
+}
+
+.wp-core-ui .button,.wp-core-ui .button-primary,.wp-core-ui .button-secondary {
+-moz-border-radius:0;
+-webkit-border-radius:0;
+border-radius:0;
+box-shadow:none;
+border:0
+}
+
+.wp-core-ui .button,.wp-core-ui .button-secondary {
+background:#e4e4e4
+}
+
+.wp-core-ui .button:hover,.wp-core-ui .button-secondary:hover,.wp-core-ui .button-primary {
+color:#FFF
+}
+
+.wp-core-ui .button:hover span.wp-media-buttons-icon:before,.wp-core-ui .button-secondary:hover span.wp-media-buttons-icon:before {
+color:#FFF
+}
+
+.wp-media-buttons .insert-media {
+font-size:12px
+}
+
+.wp-media-buttons .add_media span.wp-media-buttons-icon:before {
+font-size:14px!important
+}
+
+div.mce-toolbar-grp,.html-active .switch-html,.tmce-active .switch-tmce {
+background:#FFF!important
+}
+
+#acf-col-right {
+display:none
+}
+
+#acf-col-left {
+margin:0!important
+}
+
+.vc_navbar.subnav-fixed {
+top:40px!important
+}
+#wpfooter p {
+    font-size: 11px;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    width: 180px;
+}
+#wpcontent, #wpfooter {
+    margin-right: 180px;
+}
+
+li#wp-admin-bar-user-info {
+    display:none;
+}
+.js .postbox .handlediv:focus .toggle-indicator:before {
+    -webkit-box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8) !important;
+    box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8) !important;
+}
+.postbox {
+    min-width: 255px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.04) !important;
+    box-shadow: 0 0px 0px rgba(0,0,0,.04) !important;
+    background: #fff;
+}
+#contextual-help-link-wrap, #screen-options-link-wrap {
+    float: left;
+    height: 28px;
+    margin: 0 6px 0 0;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    background: #fff;
+    -webkit-box-shadow: 0 0px 0px 0px rgba(0,0,0,.1) !important;
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,.1) !important;
+}
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+    color: #124964;
+    -webkit-box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8) !important;
+    box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8) !important;
+}
+
+/* Wrap h1 */
+.wrap h1 {
+    font-size: 18px;
+    padding: 9px 0 10px;
+    color: #696969;
+}
+.seprate_title {
+    border-bottom:1px solid #e3e3e3;
+    margin-top:3px;
+    margin-bottom:10px;
+}
+.wrap_h1_icon {
+    margin-left: 5px;
+    vertical-align: -1px;
+}
+.wrap h2 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px 5px 0;
+}
+.wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active {
+    top: 0px;
+    display: inline-block;
+    margin-bottom: -2px;
+    border:0px;
+}
+.media-frame.mode-grid .media-toolbar select {
+    font-size: 12px;
+}
+.rtl .media-frame, .rtl .media-frame .search, .rtl .media-frame input[type=tel], .rtl .media-frame input[type=text], .rtl .media-frame input[type=password], .rtl .media-frame input[type=number], .rtl .media-frame input[type=search], .rtl .media-frame input[type=email], .rtl .media-frame input[type=url], .rtl .media-frame select, .rtl .media-frame textarea, .rtl .media-modal {
+    font-family: 'IRANSans-web', tahoma, sans-serif;
+}
+.wp-filter .search-form input[type=search] {
+    font-size: 14px;
+}
+
+/*Show time online*/
+span#show_time_online {
+    display: inline-block;
+    margin-top: 8px;
+    color: #FFF!important;
+    font-family: IRANSans-web !important;
+}
+span#timespan {
+    font-family: IRANSans-web !important;
+}
+
+/* Row Actiorn list table */
+.row-actions {
+    font-size: 11px;
+}
+.row-actions, .row-actions-visible {
+    padding: 5px 0 0;
+}
+.tablenav .tablenav-pages {
+    height: 38px;
+}
+.tablenav-pages .current-page {
+    width: 40px;
+    height: 30px;
+}
+.widefat tfoot td, .widefat th, .widefat thead td {
+    font-size: 12.5px;
+}
+.metabox-prefs .screen-options .screen-per-page {
+    margin-left: 5px;
+    float: right;
+}
+
+/* Page Loaded view */
+.loading_page {
+    position: fixed;
+    z-index: 999999;
+    width: 250px;
+    height: 38px;
+    background-color: #fff;
+    color: #545454;
+    top: 0px;
+    left: 40.5%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font: 13px tahoma;
+    line-height: 34px;
+    display: none;
+    box-shadow: 1px 1px 15px 2px #e3e3e3;
+}
+
+/** Pace*/
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    z-index: 99999;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #29d;
+
+    overflow: hidden;
+}
+
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    max-width: 200px;
+    position: fixed;
+    z-index: 999991;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: #29d;
+}
+
+.pace.pace-inactive {
+    display: none;
+}
+
+
+/* ،tooltip top*/
+.top-tooltip {
+    position: absolute !important;
+    display: inline-block !important;
+    margin-top: 39px !important;
+    height: 22px !important;
+    line-height: 17px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    text-align: center !important;
+}
+.view_tooltip {
+    visibility: hidden;
+    width: 100px !important;
+    margin-right: -40px !important;
+}
+.exit_tooltip {
+    visibility: hidden;
+    width: 50px !important;
+    margin-right: -10px !important;
+}
+
+/* remove A tag Customize */
+.hide-if-no-customize {
+    display: none !important;
+}
+
+
+/* Pagination */
+.tablenav .tablenav-pages a, .tablenav-pages-navspan {
+    display: inline-block;
+    min-width: 17px;
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+    background: #ececec;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 5px;
+    height: 17px;
+    vertical-align: middle;
+}
+.wppagination {
+    min-width: 600px;
+    text-align: left;
+}
+.tablenav .next, .tablenav .prev {
+    border-color: transparent;
+    color: rgba(109, 107, 107, 0.8);
+}
+a.prev {
+    width: 80px;
+}
+.wppagination span.current {
+    background: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 1px 10px;
+}
+.widefat td, .widefat th {
+    color: #555;
+    font-size: 12px;
+    vertical-align: middle;
+}

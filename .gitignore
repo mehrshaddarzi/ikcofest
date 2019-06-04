@@ -1,0 +1,48 @@
+#ignore all addone except
+addone/*
+!addone/wp-admin-ui/
+
+# ignore files
+file/*
+
+#ignore public
+public/*
+!public/mu-plugins/
+
+# ignore template
+template/*
+!template/ikcofest/
+!template/V1-LightBackground.zip
+
+# ignore wp-admin and wp-includes
+wp-admin/*
+wp-includes/*
+
+# ignore Root files
+!wp-config.php
+!favicon.ico
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+index.php
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+
+#.idea
+.idea
+
+#htaccess
+.htaccess
