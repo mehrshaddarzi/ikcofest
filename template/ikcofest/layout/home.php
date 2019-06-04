@@ -7,7 +7,7 @@
     <div class="clearfix"></div>
 </div>
 
-<div class="app-container" style="background-color: #fff !important;width: 100%;min-height: 50px;margin-top: -18px;padding: 25px 20%;">
+<div class="app-container" style="background-color: #fff !important;width: 100%;min-height: 50px;margin-top: -18px;padding: 25px 5%;">
 
     <ul class="home-menu" data-home-section="menu">
         <li class="col-md-4 text-center">
