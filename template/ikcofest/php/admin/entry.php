@@ -290,10 +290,6 @@ class Customers_List extends WP_List_Table {
                 <td>شهر</td>
                 <td>' . $wpdb->get_var( "SELECT `name` FROM `city` WHERE `id` =" . $item['city'] ) . '</td>
                 </tr>
-                 <tr>
-                <td>آدرس</td>
-                <td>' . $item['address'] . '</td>
-                </tr>
                 <tr>
                 <td>محل عکس</td>
                 <td>' . $item['picture_place'] . '</td>

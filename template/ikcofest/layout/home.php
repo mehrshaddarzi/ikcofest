@@ -58,7 +58,7 @@
                 <h2>
                     <a href="#" class="text-danger" data-run="show_news" data-news-id="' . get_the_ID() . '">' . get_the_title() . '</a>
                 </h2>
-                <time>تاریخ انتشار : ' . get_the_date( "Y/m/d ساعت H:i" ) . '</time>
+                <time>تاریخ انتشار : ' . per_number( get_the_date( "Y/m/d ساعت H:i" ) ) . '</time>
             </div>
             ';
 
@@ -67,7 +67,7 @@
                 <div class="section-post" data-home-section="post-' . get_the_ID() . '">
                     <div class="home-box">
                         <span class="post-title text-danger">' . get_the_title() . '</span>
-                        <time>تاریخ انتشار : ' . get_the_date( "Y/m/d ساعت H:i" ) . '</time>
+                        <time>تاریخ انتشار : ' . per_number( get_the_date( "Y/m/d ساعت H:i" ) ) . '</time>
                         <div>' . apply_filters( 'the_content', get_the_content() ) . '</div>
                     </div>
                     <a href="#" data-run="back_to_post" class="btn btn-warning back-btn">بازگشت</a>
@@ -108,7 +108,8 @@
                 <button class="btn btn-success" data-run="low" style="width: 40% !important;
     margin-right: auto !important;
     margin-left: auto !important;
-    display: block;height: 45px;margin-top: -20px;">مرحله بعدی</button>
+    display: block;height: 45px;margin-top: -20px;">مرحله بعدی
+                </button>
                 <br>
             </div>
 
@@ -180,10 +181,10 @@
                                 </select>
                             </div>
 
-                            <div class="form-group form-inline">
-                                <label class="col-md-4"> آدرس کامل <span class="text-danger">*</span></label>
-                                <textarea type="text" style="min-height: 100px;" name="address" class="form-control rtl input-group" autocomplete="off"></textarea>
-                            </div>
+                            <!--                            <div class="form-group form-inline">-->
+                            <!--                                <label class="col-md-4"> آدرس کامل <span class="text-danger">*</span></label>-->
+                            <!--                                <textarea type="text" style="min-height: 100px;" name="address" class="form-control rtl input-group" autocomplete="off"></textarea>-->
+                            <!--                            </div>-->
 
                             <div class="form-group form-inline">
                                 <label class="col-md-4"> شماره همراه <span class="text-danger">*</span></label>
@@ -233,7 +234,7 @@
 
                             <p class="desc-input text-justify" style="color: #818181;">
                                 <i class="fa fa-angle-left"></i>
-                                هر کابر میتواند حداقل یک عکس و حداکثر 5 عکس را ارسال کند.
+                                هر کاربر میتواند حداقل یک عکس و حداکثر 5 عکس را ارسال کند.
                                 <br/>
                                 <i class="fa fa-angle-left"></i>
                                 عکس ها می بایست به فرمت jpg و حداکثر حجم برای هر عکس

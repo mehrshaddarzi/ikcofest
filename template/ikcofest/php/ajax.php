@@ -73,7 +73,7 @@ function send_festival_form() {
 				'birthday'      => gregdate( "Y-m-d", $exp[2] . "/" . $exp[1] . "/" . $exp[0] ),
 				'province'      => sanitize_text_field( $_POST['province'] ),
 				'city'          => sanitize_text_field( $_POST['city'] ),
-				'address'       => sanitize_text_field( $_POST['address'] ),
+				'address'       => '',
 				'picture_place' => sanitize_text_field( $_POST['picture_place'] ),
 				'mobile'        => sanitize_text_field( $_POST['mobile'] ),
 				'instagram'     => sanitize_text_field( $_POST['instagram'] ),

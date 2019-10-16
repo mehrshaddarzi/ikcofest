@@ -204,3 +204,7 @@ form#add_new {
   }
 
 }
+
+label[for^=file_] {
+  padding: 10px 20px;
+}

@@ -66,11 +66,11 @@ function register_theme_assets() {
 	}
 
 	// Add Css and Js
-	wp_enqueue_style( 'app', get_template_directory_uri() . '/dist/css/app.min.css', 'style', '1.0.1' );
+	wp_enqueue_style( 'app', get_template_directory_uri() . '/dist/css/app.min.css', 'style', '1.0.3' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/js/bootstrap.min.js', array( 'jquery' ), '1.0.1', false );
 	wp_enqueue_script( 'bootstrap-datepicker', get_template_directory_uri() . '/dist/js/bootstrap-datapicker/bootstrap-datepicker.min.js', array( 'jquery' ), '1.0.0', false );
 	wp_enqueue_script( 'bootstrap-datepicker-persian', get_template_directory_uri() . '/dist/js/bootstrap-datapicker/bootstrap-datepicker.fa.min.js', array( 'jquery' ), '1.0.0', false );
-	wp_enqueue_script( 'app', get_template_directory_uri() . '/dist/js/app.min.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_script( 'app', get_template_directory_uri() . '/dist/js/app.min.js', array( 'jquery' ), '1.0.3', true );
 	wp_localize_script( 'app', 'application', $application );
 }
 
